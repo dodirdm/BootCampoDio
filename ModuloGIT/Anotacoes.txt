@@ -1,0 +1,21 @@
+--Configura os dados do repositório local
+git config
+
+--Comando para iniciar o repositório localmente
+git init
+
+--Comando para clona um repositório do GitHub
+git clone URL_do_Repositorio
+
+--Verificar arquivos modificados 
+git status
+
+--Comando para incluir um novo arquivo
+git add
+
+--Salvar um arquivo no repositorio
+git commit -m "Comentário do commit"
+
+--Enviar as alterações para o repositório remoto
+git push
+
