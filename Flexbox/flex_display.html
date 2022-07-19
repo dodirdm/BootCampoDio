@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Display</title>
+    <style>
+        .flex{
+            max-width: 200px;
+            padding: 10px;
+            border:  1px solid green;
+        }
+        .item{
+            background-color: blue;
+            margin: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!--div.item*3 tab gera 3linhas de uma vez-->
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <div>
+        <!--div.item*3 tab gera 3linhas de uma vez-->
+        <div class="flex">Item 1</div>
+        <div class="flex">Item 2</div>
+        <div class="flex">Item 3</div>
+        <div class="flex">Item 4</div>
+        <div class="flex">Item 5</div>
+        <div class="flex">Item 6</div>
+    </div>
+</body>
+</html>
