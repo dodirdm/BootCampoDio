@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 400px;
+        }
+        .item{
+            background-color: aqua;
+            color: green;
+            font-size: 20px;
+            text-align: center;
+            margin: 5px;
+        }
+        .flex-1{
+            flex: 1;
+            /*grow =1, shring =1, basis = 0*/
+        }
+        .flex-2{
+            flex: 2;
+            /*grow =2, shring =1, basis = 0*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Atalho para grow, shring e basis</h1>
+    <p>Basta configurar apenas a tag flex com 3 paramêtros
+        Como flex{1,0,auto}
+    </p>
+    <h1>flex:1</h1>
+    <div class="flex-container">
+        <div class="item flex-1">A</div>
+        <div class="item flex-1">BBB</div>
+        <div class="item flex-1">CC</div>
+        <div class="item flex-1">DD</div>
+        <div class="item flex-1">EF</div>
+    </div>
+    <h1>flex:2</h1>
+    <div class="flex-container">
+        <div class="item flex-2">A</div>
+        <div class="item flex-2">BBB</div>
+        <div class="item flex-1">CC</div>
+        <div class="item flex-1">DD</div>
+        <div class="item flex-1">EF</div>
+    </div>
+</body>
+</html>

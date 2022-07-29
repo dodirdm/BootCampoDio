@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex align self</title>
+    <style>
+        .container{
+            display: flex;
+            max-width: 200px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+        .item{
+            background-color: paleturquoise;
+            color: blue;
+            font-size: 20px;
+            text-align: center;
+            margin: 5px;
+        }
+        .center{
+            align-self: center;
+        }
+        .start{
+            align-self: flex-start;
+        }
+        .end{
+            align-self: flex-end;
+        }
+        .baseline{
+            align-self: baseline;
+        }
+        .stretch{
+            align-self: stretch;
+        }
+        .auto{
+            align-self: auto;
+        }
+        .direction{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>Align self auto</h1>
+    <div class="container">
+        <div class="item auto">AAA</div>
+        <div class="item auto">BBB</div>
+        <div class="item auto">345</div>
+        <div class="item auto">678</div>
+    </div>
+
+    <h1>Align self stretch + baseline</h1>
+    <div class="container">
+        <div class="item stretch">AAA</div>
+        <div class="item stretch">BBB</div>
+        <div class="item baseline">345</div>
+        <div class="item baseline">678</div>
+    </div>
+
+    <h1>Align self start+end</h1>
+    <div class="container">
+        <div class="item auto">AAA</div>
+        <div class="item auto">BBB</div>
+        <div class="item start">345</div>
+        <div class="item end">678</div>
+    </div>
+
+    <h1>Align self start+end column</h1>
+    <div class="container direction">
+        <div class="item auto">AAA</div>
+        <div class="item stretch">BBB</div>
+        <div class="item start">345</div>
+        <div class="item end">678</div>
+    </div>
+
+</body>
+</html>
