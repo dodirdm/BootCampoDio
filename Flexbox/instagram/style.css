@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Verdana, Tahoma;
+    font-size: 14px;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243,243,243);
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.wrapper{
+    display: flex; /*Inicializa o bloco container*/
+    align-items: center; /*alinhamento vertical*/
+    justify-content: start; /*alinhamento horizontal*/
+    height: 100vh;
+    width: 60%;
+}
+
+.phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.phone-img{
+    border: 3px solid black;
+    border-radius: 8%;
+
+    height: 50rem;
+    background-color: black;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /*inverte o funcionamento qd tem o flexdirection column*/
+    flex-direction: column;
+    width: 50%;
+    height: 50rem;
+    padding: 0;
+}
+.sublogin{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center; /*alinhamento vertical*/
+    justify-content: center; /*alinhamento horizontal*/
+    border: 1px solid #dbdbdb;
+    width: 80%;
+    height: 60%;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 20%;
+}
+
+.connect{
+    display: flex; /*Inicializa o bloco container*/
+    align-items: center; /*alinhamento vertical*/
+    justify-content: center; /*alinhamento horizontal*/
+    width: 80%;
+    flex-direction: column;
+}
+.connect a{
+    color:#0095f6;
+}
+
+.input{
+    background-color:  rgb(243,243,243);
+    border: 1px solid #dbdbdb;
+    width: 80%;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.btn-entrar{
+    background-color: #0095f6;
+    color: white;
+    height: 40px;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 8px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cadastro{
+    display: flex; /*Inicializa o bloco container*/
+    align-items: center; /*alinhamento vertical*/
+    justify-content: center; /*alinhamento horizontal*/
+    border: 1px solid #dbdbdb;
+    background-color: white;
+    width: 80%;
+    padding: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+}
+
+.cadastro a{
+    color: #0095f6;
+}
+.instagram-logo{
+    display: flex;
+    justify-content: center;
+}
+
+.download{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+}
+.download img{
+    max-width: 100px;
+    max-height: 50px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color:#8e8e8e;
+}
+.footer a{
+    color:  #8e8e8e;
+}
+
+.footer-links{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media (max-width: 1024px){
+    .wrapper{
+        width: 90%;
+    }
+
+    .phone{
+        display: none;
+    }
+
+    body{
+        background-color: white;
+    }
+    .login{
+        width: 90%;
+    }
+}
